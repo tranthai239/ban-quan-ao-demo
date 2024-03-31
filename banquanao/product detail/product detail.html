@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail</title>
+  <!-- Link CSS Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ <link href="product-detail css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="product-detail css/style1.css">
+ 
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+  
+    <nav class="navbar navbar-expand-lg navbar-light  container-fluid">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="..//main-page/main.html"><img src="../img/logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="..//main-page/main.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Birthday-event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../login&signup/logsign.html">Login</a>
+                <a class="dropdown-item" href="../login&signup/logsign.html">Sign Up</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+                   
+    <div class=" card-wrapper">
+      <div class="card">
+        <!--card left-->
+        <div class="product-img">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img id="showcase-img" src="../img/ao6.webp" alt="shirt-image">
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item" data-src="../img/ao2.webp" data-id="1" class="color-option"> 
+              <a href="#">
+                <img src="../img/ao2.webp" alt="shirt-image">
+              </a>
+            </div>
+            <div class="img-item" data-src="../img/ao3.webp" data-id="2" class="color-option">
+              <a href="#">
+                <img src="../img/ao3.webp" alt="shirt-image">
+              </a>
+            </div>
+            <div class="img-item" data-src="../img/ao5.webp" data-id="3" class="color-option">
+              <a href="#">
+                <img src="../img/ao5.webp" alt="shirt-image">
+              </a>
+            </div>
+            <div class="img-item" data-src="../img/ao6.webp" data-id="4" class="color-option">
+              <a href="#">
+                <img src="../img/ao6.webp" alt="shirt-image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--card right-->
+        <div class="product-content">
+          <h2 class="product-title">T-shirt</h2>
+          <div class="product-price">
+            <p> Đánh giá sản phẩm/ Lượt bán :
+              <span> 4.7/221</span></p> 
+            <p class="ori-price">
+              Old Price : <span>300.000 VND</span>
+            </p>
+            <p class="sale-price">
+              New Price : <span>278.000 VND(11%)</span>
+            </p>
+          </div>
+          <div class="product-detail">
+            <h2> about this item</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis incidunt adipisci inventore dicta neque beatae sint animi recusandae numquam itaque, iusto facilis, voluptate corporis accusantium quis praesentium odio eligendi?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quia eum repudiandae maxime minus sint blanditiis. Exercitationem obcaecati, accusantium autem amet voluptas esse, unde nihil rem officiis inventore nesciunt corporis?</p>  
+            <ul>
+              <li>
+                <div class="color-selection">
+                  <label for="color">Chọn Mẫu Áo:</label>
+                  <select id="color" name="color">
+                    <option value="1">Mẫu 1</option>
+                    <option value="2">Mẫu 2</option>
+                    <option value="3">Mẫu 3</option>
+                    <option value="4">Mẫu 4</option>
+                  </select>
+                </div>
+              </li>
+              <li>Available : <span>In stock</span></li>
+              <li>Category : <span>Shirt</span></li>
+              <li>Shipping area : <span>Viet Nam</span></li>
+              <li>Shipping fee : <span>10-23$</span></li>
+            </ul>
+          </div>
+          <div class="purchase-info">
+            <input type="number" name="" id="" min="0" value="1">
+            <button type="button" class="btn" > Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+            
+            <button type="button" class="btn"> Buy It Now</button>
+          </div>   
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <!-- Footer content here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-info">
+            <h5>Contact Information</h5>
+            <p>123 Street Name, City, Country</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +123 456 789</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="feedback">
+            <h5>Send Feedback</h5>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Link JS Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="product detail js/product-detail js.js"></script>
+
+
+
+</body>
+</html>
